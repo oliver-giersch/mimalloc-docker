@@ -1,7 +1,7 @@
 # mimalloc-docker
 
-Dockerfile for downloading the [mimalloc](https://github.com/microsoft/mimalloc)
-and builds it as a shared library with GCC. The resulting image should be used as a build container, from which the resulting lib can then be copied into the target container like so:
+Dockerfile that downloads the [mimalloc](https://github.com/microsoft/mimalloc)
+source code and builds it as a shared library with GCC. The resulting image should be used as a build container, from which the resulting lib can then be copied into the target container like so:
 
 ```docker
 FROM mimalloc:2.0.3 as lib
