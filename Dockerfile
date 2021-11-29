@@ -7,7 +7,7 @@ ARG URL=https://github.com/microsoft/mimalloc/archive/refs/tags/v${VER}.tar.gz
 
 WORKDIR /usr/local/src/mimalloc
 # install build dependencies
-RUN apk add --update --no-cache build-base cmake
+RUN apk add --update --no-cache cmake g++ gcc make
 # download sources & build
 RUN wget -O - $URL | tar -xz --strip-components 1 \
   && mkdir -p out/releases && cd out/releases \
