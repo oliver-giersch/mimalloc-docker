@@ -1,6 +1,6 @@
 # A utility container for compiling and providing mimalloc as a shared library
 
-FROM docker.io/alpine:3.14 as builder
+FROM docker.io/alpine:3.15 as builder
 
 ARG VER
 ARG URL=https://github.com/microsoft/mimalloc/archive/refs/tags/v${VER}.tar.gz
